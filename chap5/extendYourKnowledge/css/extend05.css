@@ -1,0 +1,50 @@
+/* 
+Student's Name: Clarissa Lacefield
+Today's Date: 05/06/2024
+File Name: extend05.css
+*/
+body {
+    background-color: #dde3fd;
+}
+
+#container {
+    padding-bottom: 500px;
+}
+
+.box {
+    border: 1px solid #000;
+    margin: 2%;
+    padding: 2%;
+    background-color: #798ef6;
+    color: #091034;
+    width: 400px;
+    height: 170px;
+}
+
+/* sticky */
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+}
+
+/* relative */
+.relative {
+    position: relative;
+    top: 60px;
+    left: 20px;
+
+}
+
+/* fixed */
+.fixed {
+    top: 150px;
+    right: 20px;
+}
+
+/* absolute */
+.absolute {
+    bottom: 50px;
+    right: 50px;
+}
