@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<!-- 
+    Name: Clarissa Lacefield
+    Project: JS Prompt Number Check
+    Date: 05/07/2024
+    Purpose: Take a number as input. Return if the number is =>< 50
+-->
+
+    <head>
+        <title>
+            Javascript Prompt Number Check
+        </title>
+    </head>
+
+    <body>
+
+        <h1>Javascript Prompt Number Check</h1>
+        <p id="number"></p>
+        <p id="result"></p>
+
+        <script>
+            // Ask the user to enter a number
+            let number = prompt("Please enter a number");
+
+            //prints the number the user entered
+            document.getElementById("number").innerHTML = `You entered: ${number}`;
+                if(number == 50){
+                    //if the user entered '50' print your number is equal to 50!
+                    document.getElementById("result").innerHTML= "Your number is equal to 50!";
+                } else if(number > 50){
+                    // if the user entered a number larger than 50, print your number is larger than 50!
+                    document.getElementById("result").innerHTML = "Your number is larger than 50!";
+                } else if(number < 50){
+                    //// if the user entered a number less than 50, print your number is less than 50!
+                    document.getElementById("result").innerHTML = "Your number is less than 50!"; 
+                } else {
+                    // if the user enters something not a number
+                    document.getElementById("result").innerHTML = "You did not enter a number. ";
+                }
+                
+        </script>
+    </body>
+</html>
