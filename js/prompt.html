@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- 
+    Name: Clarissa Lacefield
+    Project: JS Font Size Increment
+    Date: 05/14/2024
+    Purpose: Increase font size by increments with buttons
+
+    Note: I'm sure I'm missing something small, but crucial in my attempts at making this
+    loop work and instead made it way more complex than it needs to be. It's half working. 
+-->
+
+    <head>
+        <title>
+            Javascript Font Size Increment
+        </title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <h1>Javascript Font Size Increment</h1>
+        <button id="start" onclick="promptSize()">Pick a Font Size </button>
+        <p id="sizeFont"></p>
+
+        <p id="result">This Font Gets Bigger</p>
+        <!-- testing vars below here -->
+        <p id="result-1">User Num Prints Here</p>
+        <p id="result-2">Current Size Prints Here</p>
+        <p id="result-3">Float Size Prints Here</p>
+        <p id="result-4">Equal userNum to fontSize Prints Here</p>
+        
+        <button id="increment" onclick="incSize()">Click for Results!</button>
+
+        <script>
+        function promptSize() {
+            // Ask the user to enter a number
+            let number = prompt("Please enter a number");
+            //prints the number the user entered
+            document.getElementById("sizeFont").innerHTML= `You picked font size: ${number}px`;
+            // lets the data from number be accessible outside the function
+            return number;  
+        }
+        // get the number entered from promptSize
+        var userNum = promptSize();
+        // test line
+        document.getElementById("result-1").innerHTML = `userNum Prints Here: ${userNum}`;
+
+        function incSize(userNum){
+                            
+            const textElement = document.getElementById('result');
+            const currentSize = window.getComputedStyle(result).getPropertyValue('font-size');
+            // test currentSize
+            document.getElementById("result-2").innerHTML = `currentSize Prints Here: ${currentSize}`;
+            const floatSize = parseFloat(currentSize);
+            // test floatSize
+            document.getElementById("result-3").innerHTML = `floatSize Prints Here: ${floatSize}`;
+            const newSize = parseFloat(currentSize) + 1; // Increase by 1 pixel
+            const resultNew = result.style.fontSize = newSize + 'px';
+            
+            // I can't get my loop to work
+                // started with a for loop here, doesn't help
+                // for(i = 0; i < userNum; i++)
+                // tried both floatSize vs i for line 63
+                    if(floatSize === userNum) {
+                        // I used floatSize here to compare only numbers. 
+                        document.getElementById("result-4").innerHTML = `usernum ${userNum} is equal to font size${floatSize}`;
+                        
+                        // then make the button inactive
+                        start.disabled = true;
+                    } else {
+                        //keep looping
+                    }
+        }
+        </script>
+    </body>
+</html>
