@@ -1,7 +1,6 @@
-/*
-Author:
-Date:
-File Name: 
+/* Student's Name: Clarissa Lacefield
+    Today's Date: May 20 2024
+    File: styles07.css
 */
 
 /* CSS Reset */
@@ -38,4 +37,10 @@ aside {
 footer {
 	font-size: .70em;
 	text-align: center;
+}
+
+/* style for columns */
+.container {
+	display: flex;
+	
 }
