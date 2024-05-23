@@ -1,0 +1,58 @@
+/*
+Student's Name: Clarissa Lacefield
+    Today's Date: May 23 2024
+    File: apply08.css
+
+*/
+
+/* CSS Reset */
+body, main, footer, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body */
+body {
+	background-color: #f4f9e1;
+}
+
+/* Style rule for the container */
+#container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Style for table */
+table {
+	width: 80%;
+	margin: 0 auto;
+	border: 3px solid #71881b;
+}
+
+/* Style borders for and inside the table */
+table, td, tr, th{
+	border-collapse: collapse;
+	padding: 2%;
+}
+
+/* add a border to th and td */
+th, td {
+	border: 1px solid #7188bb;
+}
+
+/* align text in the center of the cell */
+td {
+	text-align: center;
+}
+
+/* make the odd rows a different color */
+tr:nth-child(odd) {
+	background-color: #d3e788;
+}
+
+/* Style for the footer element */
+footer {
+	font-size: .70em;
+	text-align: center;
+}
